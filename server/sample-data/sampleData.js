@@ -9,7 +9,7 @@ const projects = [
   },
   {
     id: '2',
-    clientId: '102',
+    clientId: '2',
     name: 'Mobile App Development',
     description: 'Developing a new mobile app for customer engagement.',
     status: 'Not Started',
@@ -54,7 +54,7 @@ const projects = [
   },
   {
     id: '8',
-    clientId: '108',
+    clientId: '8',
     name: 'Cloud Infrastructure Setup',
     description: 'Setting up cloud infrastructure for scalable applications.',
     status: 'Not Started',
