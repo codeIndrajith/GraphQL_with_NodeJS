@@ -15,7 +15,8 @@
     "express": "^4.19.2",
     "graphql": "^16.8.1",
     "graphql-http": "^1.22.1",
-    "mongoose": "^8.4.0"
+    "mongoose": "^8.4.0",
+    "ruru": "^2.0.0-beta.11"
   },
   "devDependencies": {
     "dotenv": "^16.4.5",

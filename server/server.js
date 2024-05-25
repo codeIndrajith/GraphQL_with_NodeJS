@@ -1,6 +1,7 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const { createHandler } = require('graphql-http/lib/use/express');
+const { ruruHTML } = require('ruru/server');
 const schema = require('./schema/schema');
 dotenv.config();
 const PORT = process.env.PORT || 4000;
@@ -10,9 +11,14 @@ app.use(
   '/graphql',
   createHandler({
     schema,
-    graphiql: process.env.NODE_ENV === 'development',
   })
 );
+
+// Serve the GraphiQL IDE.
+app.get('/', (req, res) => {
+  res.type('html');
+  res.end(ruruHTML({ endpoint: '/graphql' }));
+});
 
 app.listen(PORT, () => {
   console.log(`Server running on PORT : ${PORT}`);
