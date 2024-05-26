@@ -9,14 +9,14 @@ const PORT = process.env.PORT || 4000;
 const connectDB = require('./config/db');
 const app = express();
 
-app.use(
+connectDB();
+
+app.all(
   '/graphql',
   createHandler({
     schema,
   })
 );
-
-connectDB();
 
 // Serve the GraphiQL IDE.
 app.get('/', (req, res) => {
