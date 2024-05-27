@@ -1,6 +1,7 @@
 const express = require('express');
 const colors = require('colors');
 const dotenv = require('dotenv');
+const cors = require('cors');
 const { createHandler } = require('graphql-http/lib/use/express');
 const { ruruHTML } = require('ruru/server');
 const schema = require('./schema/schema');
@@ -10,6 +11,8 @@ const connectDB = require('./config/db');
 const app = express();
 
 connectDB();
+
+app.use(cors());
 
 app.all(
   '/graphql',
