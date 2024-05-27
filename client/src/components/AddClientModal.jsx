@@ -62,7 +62,6 @@ const AddClientModal = () => {
                   marginLeft: '8px',
                   backgroundColor: 'blue',
                   width: '100%',
-                  borderRadius: '90px',
                   textAlign: 'center',
                 }}
               >
@@ -145,15 +144,6 @@ const AddClientModal = () => {
                   Save
                 </button>
               </form>
-            </div>
-            <div className="modal-footer">
-              <button
-                type="button"
-                className="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
             </div>
           </div>
         </div>
