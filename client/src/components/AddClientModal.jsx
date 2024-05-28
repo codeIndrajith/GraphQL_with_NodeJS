@@ -40,14 +40,14 @@ const AddClientModal = () => {
         type="button"
         className="btn btn-primary"
         data-bs-toggle="modal"
-        data-bs-target="#exampleModal"
+        data-bs-target="#addClientModel"
       >
         Add Client
       </button>
 
       <div
         className="modal fade"
-        id="exampleModal"
+        id="addClientModel"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
@@ -95,7 +95,7 @@ const AddClientModal = () => {
                   <input
                     type="text"
                     className="form-control"
-                    id="exampleInputEmail1"
+                    id="clientInputEmail1"
                     placeholder="Enter Name"
                     aria-describedby="emailHelp"
                     value={name}
@@ -115,7 +115,7 @@ const AddClientModal = () => {
                   <input
                     type="email"
                     className="form-control"
-                    id="exampleInputPassword1"
+                    id="clientInputPassword1"
                     placeholder="Enter Email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -134,7 +134,7 @@ const AddClientModal = () => {
                   <input
                     type="text"
                     className="form-control"
-                    id="exampleInputPassword1"
+                    id="clientInputPassword1"
                     placeholder="Enter Phone Number"
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
